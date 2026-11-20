@@ -9,7 +9,7 @@ class HomeRouteTest(unittest.TestCase):
         resp = self.client.get("/")
         self.assertEqual(resp.status_code, 200)
         data = resp.get_json()
-        self.assertEqual(data["message"], "Goodbye!")
+        self.assertEqual(data["message"], "Hello from Jenkins!")
         self.assertEqual(data["status"], "ok")
 
 if __name__ == "__main__":
